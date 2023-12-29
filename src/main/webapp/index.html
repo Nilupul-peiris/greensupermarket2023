@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to Green Supermarket</title>
+<!-- Bootstrap CSS link -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<style>
+body {
+	font-family: Arial, sans-serif;
+	background: linear-gradient(to bottom, #4CAF50, #388E3C);
+	color: white;
+	margin: 0;
+	padding: 0;
+}
+
+#cover {
+	background: linear-gradient(to bottom, #81C784, #66BB6A);
+	padding: 50px;
+	text-align: center;
+	font-size: 30px;
+}
+
+#cover img {
+	width: 100%;
+	height: 500%;
+	margin-bottom:35px;
+}
+
+header {
+	text-align: center;
+	background: linear-gradient(to right, #2E7D32, #1B5E20);
+	color: white;
+	padding: 15px;
+	font-size: 20px;
+}
+
+header img {
+	max-width: 100px;
+	max-height: 100px;
+}
+
+header h1 {
+	font-size: 100px;
+	font-family: 'Your Desired Font', cursive;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#top-buttons {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+h6 {
+	color: #2E7D32;
+	font-size: 35px;
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top:15px;
+	font-weight: bold;
+}
+
+#categories {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.category {
+	flex: 0 1 calc(25% - 20px);
+	text-align: center;
+	padding: 15px;
+	margin-bottom: 10px;
+}
+
+.category img {
+	max-width: 100%;
+	max-height: 150px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
+
+#products-button-container {
+	text-align: center;
+}
+
+#products-button, #cart-button {
+	background-color: white;
+	color: #4CAF50;
+	padding: 10px 20px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	margin-left: 10px;
+}
+
+#products-button:hover, #cart-button:hover {
+	background-color: #F0F0F0;
+}
+
+#about-us {
+	background: #90EE90;
+	padding: 60px;
+	border-radius: 10px;
+	margin-top: 40px;
+	text-align: justify;
+}
+
+#about-us h2 {
+	color: #2E7D32;
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top:0px;
+	font-weight: bold;
+}
+
+#about-us p {
+	color: #000000;
+}
+
+h3 {
+	font-size: 25px;
+	text-align: center;
+	margin-top: 30px;
+	font-weight: bold;
+}
+
+#about-us ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	color: black;
+	text-align: center;
+}
+
+#about-us ul li {
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+h4 {
+	font-size: 15px;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom:20px;
+}
+
+h5 {
+	color: black;
+	text-align:center;
+	margin-bottom:20px;
+	margin-top:50px;
+}
+
+footer {
+	background: linear-gradient(to bottom, #2E7D32, #1B5E20);
+	color: white;
+	text-align: center;
+	padding: 10px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+#navbar {
+	background: #4CAF50;
+	padding: 10px;
+	text-align: center;
+}
+
+#navbar a {
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	margin: 0 10px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#navbar a:hover {
+	background-color: #F0F0F0;
+	color: #2E7D32;
+}
+</style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<div id="navbar">
+	<a href="">Home</a>
+	<a href="Index.jsp">Products</a>
+	<a href="Cart.jsp">Cart</a>
+	<a href="Login.jsp">Login</a>
+</div>
+
+<!-- Header Section -->
+<header>
+	<h1>Green Supermarket</h1>
+</header>
+
+<!-- Cover Page with Short Description -->
+<section id="cover">
+	<img src="https://images.everydayhealth.com/images/diet-nutrition/go-green-for-better-health-00-1440x810.jpg" alt="Cover Photo">
+	<p>Welcome to Green Supermarket! We are committed to providing fresh and sustainable products for a healthier lifestyle.</p>
+</section>
+
+<!-- Categories Section -->
+<h6 style="text-align: center; color: white;">Our Categories</h6>
+<section id="categories">
+	<!-- Category 1 -->
+	<div class="category">
+		<img src="https://www.healthyeating.org/images/default-source/home-0.0/nutrition-topics-2.0/general-nutrition-wellness/2-2-2-3foodgroups_fruits_detailfeature.jpg" alt="Category 1">
+		<h3>Fruits</h3>
+		<p>Juicy, flavorful fruits provide a tasty and nutritious treat for a healthy lifestyle.</p>
+	</div>
+	<!-- Category 2 -->
+	<div class="category">
+		<img src="https://media.gq-magazine.co.uk/photos/5e2987428f4e9e0008b5fdf0/master/pass/20200123-Vegetables.jpg" alt="Category 2">
+		<h3>Vegetables</h3>
+		<p>Fresh, vibrant veggies, a colorful, nutrient-packed addition to your plate.</p>
+	</div>
+	<!-- Category 3 -->
+	<div class="category">
+		<img src="https://readingterminalmarket.org/wp-content/uploads/2022/06/philadelphia-market-bakery.jpg" alt="Category 3">
+		<h3>Bakery</h3>
+		<p>Creamy dairy treats and oven-fresh delights for a perfect blend of comfort and taste.</p>
+	</div>
+	<!-- Category 4 -->
+	<div class="category">
+		<img src="https://img.jamieoliver.com/home/wp-content/uploads/2016/05/herbfeature630x420.jpg" alt="Category 4">
+		<h3>Herbals</h3>
+		<p>Aromatic herbs, rich in flavor and health benefits, elevate your culinary creations.</p>
+	</div>
+	<!-- Category 5 -->
+	<div class="category">
+		<img src="https://media.meer.com/attachments/e93e9eb9c2850d7ffe69d0383ed27baf224eafd3/store/fill/690/388/35defd11ef8de6b2a0af60645188fd44f1fdcc1e7ed397421e56f58cd7c7/Eggs-milk-and-cheese.jpg" alt="Category 5">
+		<h3>Dairy & Eggs</h3>
+		<p>Humans have utilized milk to generate nutritious foods that remain fresh and stored.</p>
+	</div>
+	<!-- Category 6 -->
+	<div class="category">
+		<img src="https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/R62Z6RGZI4I6XDEHVVXSPEMMPA.jpg" alt="Category 6">
+		<h3>Frozen Foods</h3>
+		<p>Convenient frozen options for quick, flavorful solutions in a busy world.</p>
+	</div>
+	<!-- Category 7 -->
+	<div class="category">
+		<img src="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2016_10/1002361/cleaning-products-stock-today-160307-tease.jpg" alt="Category 7">
+		<h3>Cleaning Products</h3>
+		<p>Effective, eco-friendly cleaners for a sparkling home and a greener planet.</p>
+	</div>
+</section>
+
+<!-- Products Button -->
+<section id="products-button-container">
+	<a href="Index.jsp" id="products-button">Explore Our Products</a>
+</section>
+
+<!-- About Us Section -->
+<section id="about-us">
+	<h2>About Green Supermarket</h2>
+	<p>Welcome to GreenSupermarket, the convenient and sustainable grocery store. We at GreenSupermarket are committed to giving you an environmentally friendly shopping experience. From locally sourced fresh fruit to environmentally friendly household staples, every product we sell reflects our dedication to environmental responsibility. In order to support our neighborhood and guarantee the best products on our shelves, we place a high value on our relationships with nearby farmers and artisans. We work to lessen our influence on the environment by promoting trash reduction, cutting back on single-use plastics, and improving energy efficiency. One thoughtful decision at a time, come along with us as we build a greener future. We appreciate you selecting GreenSupermarket, where every purchase you make benefits the environment as well as your health.</p>
+	<h2>Contact Us:</h2>
+	<ul>
+		<li><strong>Phone:</strong> 0112237028</li>
+		<li><strong>Email:</strong> info@greensupermarket.com</li>
+		<li><strong>Address:</strong> 123 Colombo Street, Rajagirya, Sri Lanka</li>
+	</ul>
+	<h5>Join us in our commitment to a healthier lifestyle and a greener future. Thank you for choosing Green Supermarket!</h5>
+</section>
+
+<!-- Footer Section -->
+<footer>
+	<p>&copy; 2023 Green Supermarket. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap JS and Popper.js scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
